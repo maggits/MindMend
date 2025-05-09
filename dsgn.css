@@ -1,0 +1,297 @@
+body {
+  background-color: #006A71;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #9ACBD0;
+  color: white;
+  position: relative;
+  z-index: 10;
+}
+
+img {
+  width: 200px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin-right: 40px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.nav-links a:hover {
+  background-color: #575757;
+}
+
+/* Hide the checkbox input */
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger icon styling */
+.toggle {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  padding: 10px;
+}
+
+.bars {
+  width: 25px;
+  height: 3px;
+  background: white;
+  transition: 0.3s ease;
+}
+
+/* Hide dropdown by default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Show dropdown when checkbox is checked */
+.dropdown input[type="checkbox"]:checked ~ .dropdown-content {
+  display: block;
+}
+
+/* Dropdown link styles */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px 20px; /* Add top padding to make space for the navbar */
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  color: transparent;
+  background: linear-gradient(45deg, #FF6B6B, #FFD93D, #6BCB77, #4D96FF, #FF6B6B);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: rainbowMove 5s ease infinite, bounce 2s infinite;
+  margin: 0;
+  padding: 20px 0;
+}
+
+/* Rainbow moving gradient animation */
+@keyframes rainbowMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Smooth bounce effect */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Icon box container */
+.icon-box {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #f8f8f8;
+  border-radius: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 2px solid #ccc;
+}
+.icon-box h2 {
+  color: white; 
+  margin-bottom: 20px;
+}
+/* Solid color container */
+.icon-box-solid {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #9ACBD0;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 2px solid #ccc;
+}
+
+/* Glassmorphism style container */
+.icon-box-glass {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  animation: fadePulse 5s ease-in-out infinite;
+}
+
+/* Optional animation for glass container */
+@keyframes fadePulse {
+  0% {
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  }
+  50% {
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+  }
+  100% {
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  }
+}
+
+/* Icon grid layout */
+.icon-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-top: 30px;
+}
+
+/* Icon styling */
+.icon-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #fff;
+  font-size: 2.2rem;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-content:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 2px 45px 0px rgba(0, 0, 0, 0.12);
+}
+
+.tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: -50px;
+}
+
+.emoji {
+  transition: transform 0.3s ease;
+}
+
+.icon-content:hover .emoji {
+  animation: moveEmoji 1s ease-in-out infinite;
+}
+
+@keyframes moveEmoji {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* Tooltip colors per icon */
+.icon-content[data-social="mood tracker"] {
+  background-color: orange;
+}
+.icon-content[data-social="journal"] {
+  background-color: brown;
+}
+.icon-content[data-social="progress report"] {
+  background-color: grey;
+}
+/* Icon Box Styling — blended with animated pulse */
+.icon-box {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  animation: fadePulse 5s ease-in-out infinite;
+}
+
+/* Smooth fade-glow animation */
+@keyframes fadePulse {
+  0% {
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  }
+  50% {
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+  }
+  100% {
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  }
+}

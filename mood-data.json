@@ -1,0 +1,112 @@
+[
+    {
+        "user_id": 22,
+        "mood": "\ud83d\ude22 Sad",
+        "happiness": "2.5",
+        "note": "",
+        "date": "2025-05-05 11:07:27"
+    },
+    {
+        "user_id": 23,
+        "mood": "\ud83d\ude42 Happy",
+        "happiness": "2.5",
+        "note": "",
+        "date": "2025-05-05 11:09:13"
+    },
+    {
+        "id": "6818ba8b4a99e",
+        "user_id": 18,
+        "mood": "\ud83d\ude22 Sad",
+        "happiness": "5",
+        "note": "",
+        "date": "2025-05-05 15:18:03"
+    },
+    {
+        "id": "6818ba939ae06",
+        "user_id": 18,
+        "mood": "\ud83d\ude31 Fear",
+        "happiness": "5",
+        "note": "",
+        "date": "2025-05-05 15:18:11"
+    },
+    {
+        "id": "6818ba9f6a640",
+        "user_id": 18,
+        "mood": "\ud83d\ude42 Happy",
+        "happiness": "7",
+        "note": "",
+        "date": "2025-05-05 15:18:23"
+    },
+    {
+        "id": "6818bb5262f0f",
+        "user_id": 18,
+        "mood": "\ud83d\ude30 Anxiety",
+        "happiness": "3",
+        "note": "",
+        "date": "2025-05-05 15:21:22"
+    },
+    {
+        "id": "6818e7d2ea7c7",
+        "user_id": 18,
+        "mood": "\ud83d\ude04 Excited",
+        "happiness": "7",
+        "note": "",
+        "date": "2025-05-05 18:31:14"
+    },
+    {
+        "id": "68198b897d3f2",
+        "user_id": 18,
+        "mood": "\ud83d\ude21 Angry",
+        "happiness": "10",
+        "note": "sobra kaayo ",
+        "date": "2025-05-06 06:09:45"
+    },
+    {
+        "id": "6819a8cea75f7",
+        "user_id": 18,
+        "mood": "\ud83d\ude42 Happy",
+        "happiness": "8",
+        "note": "goods",
+        "date": "2025-05-06 08:14:38"
+    },
+    {
+        "id": "6819aa27c620f",
+        "user_id": 18,
+        "mood": "\ud83d\ude42 Happy",
+        "happiness": "10",
+        "note": "good",
+        "date": "2025-05-06 08:20:23"
+    },
+    {
+        "id": "681c545c22244",
+        "user_id": 25,
+        "mood": "\ud83d\ude04 Excited",
+        "happiness": "7",
+        "note": "great",
+        "date": "2025-05-08 08:51:08"
+    },
+    {
+        "id": "681c6ef48f021",
+        "user_id": 18,
+        "mood": "\ud83d\ude30 Anxiety",
+        "happiness": "5",
+        "note": "",
+        "date": "2025-05-08 10:44:36"
+    },
+    {
+        "id": "681c6f5115ecc",
+        "user_id": 18,
+        "mood": "\ud83d\ude21 Angry",
+        "happiness": "10",
+        "note": "",
+        "date": "2025-05-08 10:46:09"
+    },
+    {
+        "id": "681c79e790182",
+        "user_id": 28,
+        "mood": "\ud83d\ude42 Happy",
+        "happiness": "10",
+        "note": "great",
+        "date": "2025-05-08 11:31:19"
+    }
+]
